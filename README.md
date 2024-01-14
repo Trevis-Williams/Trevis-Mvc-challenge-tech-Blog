@@ -27,7 +27,7 @@ To install Trevis-Mvc-Challenge-Tech-Blog, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Run `npm install` to install dependencies.
-3. Set up your MySQL database and update the configuration in the `.env` file.
+3. Set up your MySQL database and update the configuration in the `.env` file. CREATE DATABASE crowdfund_db;
 4. Run `npm start` to start the application.
 
 ## Usage

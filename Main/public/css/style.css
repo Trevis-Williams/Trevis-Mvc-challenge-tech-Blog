@@ -22,3 +22,58 @@ header, .project:not(:last-child) {
   font-weight: bold;
   margin-left: -5px;
 }
+
+
+
+.login-btn-nav{
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.no-button{
+font-size: 20px;
+font-weight: 800;
+}
+
+
+.profile-btn{
+  font-size: 20px;
+font-weight: 800;
+}
+
+.the-tech-blog{
+  color: #1b89bc;
+  margin-right: 60px;
+}
+/* 
+.footer{
+  color: #1b89bc;
+} */
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 14px;
+  height: 175px;
+}
+
+footer a {
+  color: #6ccef5;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project{
+ 
+}

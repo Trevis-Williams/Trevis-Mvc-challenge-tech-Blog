@@ -14,25 +14,32 @@
     <header class="display-flex justify-space-between align-center p-2">
       <h1>
         <span role="img" aria-label="money"></span>
-        <a href="/">The Tech blog</a>
+        <a href="/">Dashboard</a>
       </h1>
+      <h1 class="the-tech-blog">Get With the Tech Blog</h1>
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+        <a href="/profile" class="profile-btn">Post</a> |
+        <button class="no-button" id="logout">Logout</button>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login" class="login-btn-nav">Login</a>
         {{/if}}
       </nav>
     </header>
-    <main class="container container-fluid mt-5">
+    <main id="Main-ctn" class="container container-fluid mt-5">
       <!-- Render the sub layout -->
+      
       {{{ body }}}
+      
     </main>
     <footer>
-      
-    </footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Trevis Tech Blog. All rights reserved.</p>
+        <p>Disclaimer: The opinions expressed here are my own and do not necessarily represent those of my employer.</p>
+        <p>Need to get in touch? <a href="mailto:Rst1426@gmail.com">Email us</a></p>
+    </div>
+</footer>
   </div>
 
   <!-- Render script for logged in users only -->
