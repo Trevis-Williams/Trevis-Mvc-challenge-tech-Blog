@@ -4,6 +4,9 @@
 
 Trevis-Mvc-Challenge-Tech-Blog is a full-featured blogging platform built with an MVC (Model-View-Controller) framework. This project is designed for tech enthusiasts to share and discuss the latest trends, technologies, and insights in the world of software development.
 
+## Screen Shots 
+
+
 ## Features
 
 - User Authentication (login/logout).
