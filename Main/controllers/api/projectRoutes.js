@@ -2,7 +2,22 @@ const router = require('express').Router();
 const { Project } = require('../../models');
 const withAuth = require('../../utils/auth');
 
-router.post('/', withAuth, async (req, res) => {
+
+
+
+// This route will render a page with the form when '/new-project' is accessed
+router.get('project', (req, res) => {
+  // The logic here would usually involve rendering a view that contains the form.
+  // For example, if you're using a template engine like Handlebars:
+  res.render('project', {
+    // You can pass data to your template if needed, like:
+    project: {
+      name: '', // Default or previously saved value
+      description: '' // Default or previously saved value
+    }
+  });
+});
+router.post('/project', withAuth, async (req, res) => {
   try {
     const newProject = await Project.create({
       ...req.body,

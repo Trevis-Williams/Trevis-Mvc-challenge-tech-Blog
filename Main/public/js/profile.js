@@ -1,11 +1,12 @@
+
 const newFormHandler = async (event) => {
   event.preventDefault();
 
-  document.querySelector('.new-project-form').addEventListener('submit', newFormHandler);
+  const name = document.querySelector('#project-name').value.trim();
   const description = document.querySelector('#project-desc').value.trim();
 
   if (name && description) {
-    const response = await fetch(`/api/projects`, {
+    const response = await fetch(`./api/projects`, {
       method: 'POST',
       body: JSON.stringify({ name, description }),
       headers: {
@@ -16,9 +17,9 @@ const newFormHandler = async (event) => {
     if (response.ok) {
       document.location.replace('/profile');
     } else {
-      alert('Failed to create project');
+      alert('Failed to create Post');
     }
-  }
+  } 
 };
 
 const delButtonHandler = async (event) => {
@@ -37,26 +38,9 @@ const delButtonHandler = async (event) => {
   }
 };
 
+document
+  .querySelector('.new-project-form')
+  .addEventListener('submit', newFormHandler);
 
-const createFormHandler = async (event) => {
-  event.preventDefault();
 
-  const name = document.querySelector('#project-name').value.trim();
-  const description = document.querySelector('#project-desc').value.trim();
 
-  if (name && description) {
-    const response = await fetch('/api/projects', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ name, description }),
-    });
-
-    if (response.ok) {
-      document.location.replace('/profile');
-    } else {
-      alert('Failed to create project');
-    }
-  }
-};

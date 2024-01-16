@@ -1,15 +1,19 @@
 [
   {
-    "name": "MVC architecture separates data (Model), user interface (View), and business logic (Controller), facilitating easier maintenance, scalability, and efficient development in software and web applications.",
+    "post": "MVC architecture separates data (Model), user interface (View), and business logic (Controller), facilitating easier maintenance, scalability, and efficient development in software and web applications.",
     "description": "A mobile app that will send you notifications whenever a concert is playing in your area."
   },
   {
-    "name": "Authentication Vs. Authorization",
+    "post": "Authentication Vs. Authorization",
     "description": "Authentication vs. Authorization: Explore the crucial differences between these two fundamental security processes. Authentication verifies a user's identity, ensuring they are who they claim to be, typically through passwords or biometric data. In contrast, Authorization determines the user's access rights and privileges within a system after their identity is authenticated. Understanding this distinction is key to implementing robust security protocols in any digital environment."
   },
   {
-    "name": "Object-Relational Mapping",
+    "post": "Object-Relational Mapping",
     "description": "I have really loved learning about ORMS. Its really simplified the way i create querires in SQL!"
+  },
+  {
+    "post": "Test",
+    "description": "test"
   }
   
 ]
